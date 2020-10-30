@@ -2,13 +2,6 @@
 
 <form method="post" action="{{route('contactus-form')}}" id="id-form_messages" enctype="multipart/form-data">
     @csrf
-    {{--<div class="form-group">
-        <label for="task">Задача:</label>
-        <input class="form-control" placeholder="Введите новую задачу" name="task" type="text"  id="task">
-    </div>--}}
-    {{--<div class="form-group">
-        <input class="btn btn-primary" type="submit" value="Добавить">
-    </div>--}}
     <div class="row mb-3">
         <div class="col-md-6">
             <div class="md-form mb-0">
@@ -88,10 +81,6 @@
         </div>
     </div>
 
-        {{--<div class="form-group col-md-6">
-            <input type="file" class="custom-file-input" name="upload_file"  id="upload_file">
-            <label class="custom-file-label" for="customFile">Прикрепите файл</label>
-        </div>--}}
 
     <div class="custom-file mb-3">
         <input type="file" class="custom-file-input" name="upload_file"  id="upload_file" aria-describedby="upload_file">

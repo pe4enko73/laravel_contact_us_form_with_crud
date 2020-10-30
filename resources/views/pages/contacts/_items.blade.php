@@ -1,13 +1,13 @@
 @extends('index')
 @section('content')
-    @if(session()->has('message'))
-        <div class="alert alert-success">
-            {{ session()->get('message') }}
-        </div>
-    @endif
-    <h1 class="text-center">{{$pagetitle}}</h1><hr/>
-    <div class="text-right"><b>Всего:</b> <i class="badge">{{$count}}</i></div>
-    <br/>
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>
+@endif
+<h1 class="text-center">{{$pagetitle}}</h1><hr/>
+<div class="text-right"><b>Всего:</b> <i class="badge">{{$count}}</i></div>
+<br/>
 <div class="contacts">
     @if (! $contacts->isEmpty())
 
@@ -36,12 +36,11 @@
                     </div>
                 </div>
             </div>
-
         @endforeach
 
-            <div class="d-flex justify-content-center">
-                {!! $contacts->links("pagination::bootstrap-4") !!}
-            </div>
+        <div class="d-flex justify-content-center">
+            {!! $contacts->links("pagination::bootstrap-4") !!}
+        </div>
 </div>
     @else
             <h1 class="text-center">Обращений не найдено</h1><hr/>

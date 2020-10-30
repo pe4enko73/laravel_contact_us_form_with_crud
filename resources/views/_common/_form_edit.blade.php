@@ -3,13 +3,7 @@
 
 <form method="post" action="{{route('update_contact-form',$data->id)}}" id="id-form_messages" enctype="multipart/form-data">
     @csrf
-    {{--<div class="form-group">
-        <label for="task">Задача:</label>
-        <input class="form-control" placeholder="Введите новую задачу" name="task" type="text"  id="task">
-    </div>--}}
-    {{--<div class="form-group">
-        <input class="btn btn-primary" type="submit" value="Добавить">
-    </div>--}}
+
     <div class="row mb-3">
         <div class="col-md-6">
             <div class="md-form mb-0">
@@ -113,17 +107,6 @@
             </div>
         </div>
     </div>
-
-    {{--<div class="form-group col-md-6">
-        <input type="file" class="custom-file-input" name="upload_file"  id="upload_file">
-        <label class="custom-file-label" for="customFile">Прикрепите файл</label>
-    </div>--}}
-
-    {{--<div class="custom-file mb-4">
-        <input type="file" class="custom-file-input" name="upload_file"  id="upload_file"  aria-describedby="upload_file">
-        <label id="upload_file_label" class="custom-file-label" for="upload_file">{!!$data->filename!!}</label>
-        <a href="{{ asset('uploads/'.$data->filename) }}" >{!!$data->filename!!}</a>
-    </div>--}}
     <div class="custom-file mb-4" id="upload">
         @if($data->filename!=='-')
         <a href="{{ asset('uploads/'.$data->filename) }}" >{!!$data->filename!!}</a>
@@ -146,7 +129,7 @@
             </div>
         @endif
     </div>
-    @if ($data->sendtoemail==1)
+    {{--@if ($data->sendtoemail==1)
         <div class="custom-control custom-checkbox  mb-3">
             <input type="checkbox" name="sendtoemail" class="custom-control-input" value="1" id="customControlInline" checked>
             <label class="custom-control-label" for="customControlInline">Отправить на электронную почту?</label>
@@ -156,7 +139,7 @@
             <input type="checkbox" name="sendtoemail" class="custom-control-input" value="1" id="customControlInline" >
             <label class="custom-control-label" for="customControlInline">Отправить на электронную почту?</label>
         </div>
-    @endif
+    @endif--}}
 
     <div class="row">
         <div class="col-md-3">
@@ -175,12 +158,10 @@
     function res_new() {
         document.getElementById("delete_cur_file").value = 1
         var newupload = document.getElementById('upload');
-        /*var text = document.createElement('div');*/
         newupload.innerHTML = "<input type='file' class='custom-file-input '  name='upload_file'  id='upload_file' aria-describedby='upload_file' > <label id='upload_file_label'  class='custom-file-label' for='upload_file' >Прикрепите файл</label>";
         document.querySelector('.custom-file-input').addEventListener('change', function (e) {
             var fileName = document.getElementById("upload_file").files[0].name;
             document.getElementById('upload_file_label').innerHTML = fileName
         });
     }
-/* newupload.appendChild(text);*/
 </script>
