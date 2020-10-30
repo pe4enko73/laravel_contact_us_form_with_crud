@@ -18,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
@@ -130,6 +133,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hjSLOS6Pv2ipbjxULAQ1H9FI0U" />
@@ -140,14 +144,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/_common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Program Files (x86)\Open Server\OpenServer\domains\Contact_Us_Form_laravel\public" />
+      <recent name="F:\Program Files (x86)\Open Server\OpenServer\domains\todolist_laravel\database\migrations" />
       <recent name="F:\Program Files (x86)\Open Server\OpenServer\domains\todolist_laravel\resources\views\_common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Program Files (x86)\Open Server\OpenServer\domains\todolist_laravel\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -167,7 +176,13 @@
       <workItem from="1600522956661" duration="61000" />
       <workItem from="1600523223330" duration="14579000" />
       <workItem from="1600677685460" duration="21399000" />
-      <workItem from="1600757673957" duration="263000" />
+      <workItem from="1600757673957" duration="757000" />
+      <workItem from="1601925564160" duration="5000" />
+      <workItem from="1602147611820" duration="2876000" />
+      <workItem from="1602156023101" duration="1808000" />
+      <workItem from="1603903417320" duration="11623000" />
+      <workItem from="1603974122983" duration="32065000" />
+      <workItem from="1604057605868" duration="10693000" />
     </task>
     <servers />
   </component>
@@ -183,13 +198,44 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="705" y="127" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.217.1920.1040@0.0.1920.1040" timestamp="1600523661533" />
-    <state x="784" y="440" key="Github.CreateGistDialog" timestamp="1600757856310">
+    <state x="404" y="283" key="FileChooserDialogImpl" timestamp="1603976763733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="784" y="440" key="Github.CreateGistDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600757856310" />
+    <state x="404" y="283" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603976763733" />
+    <state x="784" y="440" key="Github.CreateGistDialog" timestamp="1600757954661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="784" y="440" key="Github.CreateGistDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600757954661" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604000547144">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604000547144" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604001883322">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604001883322" />
     <state x="671" y="162" width="1215" height="801" key="find.popup" timestamp="1600705430856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="671" y="162" width="1215" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600705430856" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1603979398282">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603979398282" />
+    <state x="157" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1603979399114">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="157" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603979399114" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/pages/contacts/contact_email.blade.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

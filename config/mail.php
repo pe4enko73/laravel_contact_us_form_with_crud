@@ -36,11 +36,15 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+            'host' => env('MAIL_HOST', 'smtp.yandex.ru'),
             'port' => env('MAIL_PORT', 587),
+            'from' => [
+                'address' => 'eldarsimstudent@yandex.ru',
+                'name' => 'EldarProject',
+            ],
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+            'username' => env('MAIL_USERNAME','eldarsimstudent@yandex.ru'),
+            'password' => env('MAIL_PASSWORD','ckyopsafehgwnjvi'),
             'timeout' => null,
             'auth_mode' => null,
         ],

@@ -1,5 +1,7 @@
 @extends('index')
 @section('content')
+
+    <h1 class="text-center">{{$pagetitle}}</h1><hr/>
     @if($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -9,11 +11,14 @@
             </ul>
         </div>
     @endif
+    @if(session()->has('message'))
+        <div class="alert alert-success">
+            {{ session()->get('message') }}
+        </div>
+    @endif
             @include('_common._form')
-            <div class="text-right"><b>Всего задач:</b> <i class="badge">{{$count}}</i></div>
-            <br/>
 
-            @include('pages.tasks._items')
+
 @stop
 
 

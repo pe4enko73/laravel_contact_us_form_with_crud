@@ -24,13 +24,28 @@ class TaskRequest extends FormRequest
     public function rules()
     {
         return [
-            'task'=>'required'
+            'name'=>'required|min:10|max:255|regex:/^[\pL\s\-]+$/u',
+            'email' => 'email:rfc,dns',
+            'gender'=> 'required|in:male,female',
+            'select_country'=>'required|in:Россия,Англия,США',
+            'description' => 'required|min:10|max:1000',
+
         ];
     }
     public function messages()
     {
         return [
-            'task.required'=>'Поле Задача является обязательным'
+            'name.required'=>'Поле ФИО является обязательным',
+            'name.min'=>'Поле ФИО является обязательным,должен содержать не менее 10 символов',
+            'name.regex'=>'Поле ФИО должно содержать только буквы',
+            'email.email' => 'Введите вашу существующую электронную почту',
+            'gender.required'=>'Выберите ваш пол',
+            'select_country.required'=>'Выберите выберите страну проживания',
+            'description.required'=>'Поле "Опишите подробнее" должно содержать от 10 до 1000 символов'
+
+
+
+
         ];
     }
 }
